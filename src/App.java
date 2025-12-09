@@ -5,28 +5,28 @@ public class App {
         // -----------------------------
         // B / B+ LEVEL: constructor, toString, purchaseOne()
         // -----------------------------
-        System.out.println("--- B / B+ LEVEL TESTS ---");
-        SnackMachineSlot slotA = new SnackMachineSlot("Chips", 1.50, 3);
+        // System.out.println("--- B / B+ LEVEL TESTS ---");
+        // SnackMachineSlot slotA = new SnackMachineSlot("Chips", 1.50, 3);
 
-        System.out.println("Initial slotA (should show Chips, 1.5, 3 in stock):");
-        System.out.println(slotA);
+        // System.out.println("Initial slotA (should show Chips, 1.5, 3 in stock):");
+        // System.out.println(slotA);
 
-        System.out.println("\nBuying 1 snack from slotA...");
-        slotA.purchaseOne(); 
-        System.out.println("After 1st purchase (quantity should be 2):");
-        System.out.println(slotA);
+        // System.out.println("\nBuying 1 snack from slotA...");
+        // slotA.purchaseOne(); 
+        // System.out.println("After 1st purchase (quantity should be 2):");
+        // System.out.println(slotA);
 
-        System.out.println("\nBuying 2 more snacks from slotA...");
-        slotA.purchaseOne();
-        slotA.purchaseOne();
-        System.out.println("After 3rd purchase (quantity should be 0):");
-        System.out.println(slotA);
+        // System.out.println("\nBuying 2 more snacks from slotA...");
+        // slotA.purchaseOne();
+        // slotA.purchaseOne();
+        // System.out.println("After 3rd purchase (quantity should be 0):");
+        // System.out.println(slotA);
 
-        System.out.println("\nTrying to buy from empty slotA (quantity should stay 0):");
-        slotA.purchaseOne();
-        System.out.println("After attempting purchase on empty slotA:");
-        System.out.println(slotA);
-        System.out.println();
+        // System.out.println("\nTrying to buy from empty slotA (quantity should stay 0):");
+        // slotA.purchaseOne();
+        // System.out.println("After attempting purchase on empty slotA:");
+        // System.out.println(slotA);
+        // System.out.println();
 
         // -----------------------------
         // A- LEVEL: constructor validation
@@ -68,24 +68,24 @@ public class App {
         // -----------------------------
         // A+ LEVEL: getRevenue()
         // -----------------------------
-        // System.out.println("--- A+ LEVEL TESTS (getRevenue) ---");
-        // SnackMachineSlot slotD = new SnackMachineSlot("Gum", 0.75, 5);
+        System.out.println("--- A+ LEVEL TESTS (getRevenue) ---");
+        SnackMachineSlot slotD = new SnackMachineSlot("Gum", 0.75, 5);
 
-        // System.out.println("Initial slotD:");
-        // System.out.println(slotD);
+        System.out.println("Initial slotD:");
+        System.out.println(slotD);
 
-        // System.out.println("\nBuying 3 packs of gum from slotD...");
-        // slotD.purchaseOne();
-        // slotD.purchaseOne();
-        // slotD.purchaseOne();
-        // System.out.println("After 3 purchases, slotD:");
-        // System.out.println(slotD);
+        System.out.println("\nBuying 3 packs of gum from slotD...");
+        slotD.purchaseOne();
+        slotD.purchaseOne();
+        slotD.purchaseOne();
+        System.out.println("After 3 purchases, slotD:");
+        System.out.println(slotD);
 
-        // double revenueD = slotD.getRevenue();
-        // System.out.println("\nslotD.getRevenue() returned: " + revenueD);
-        // System.out.println("Expected revenue: 3 * 0.75 = 2.25 (if itemsSold and price are correct).");
-    }
-}
+        double revenueD = slotD.getRevenue();
+        System.out.println("\nslotD.getRevenue() returned: " + revenueD);
+        System.out.println("Expected revenue: 3 * 0.75 = 2.25 (if itemsSold and price are correct).");
+    
+
 
     }
 
